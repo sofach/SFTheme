@@ -1,0 +1,550 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09A1676B37BEA6DB0AB09AC1 /* libPods-SFTheme.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8865928DAA65D38EE6AB6E8C /* libPods-SFTheme.a */; };
+		AD249A531B8ABD4F003AD9BE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD249A521B8ABD4F003AD9BE /* main.m */; };
+		AD249A561B8ABD4F003AD9BE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD249A551B8ABD4F003AD9BE /* AppDelegate.m */; };
+		AD249A591B8ABD4F003AD9BE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD249A581B8ABD4F003AD9BE /* ViewController.m */; };
+		AD249A5C1B8ABD4F003AD9BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD249A5A1B8ABD4F003AD9BE /* Main.storyboard */; };
+		AD249A5E1B8ABD4F003AD9BE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD249A5D1B8ABD4F003AD9BE /* Images.xcassets */; };
+		AD249A611B8ABD4F003AD9BE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD249A5F1B8ABD4F003AD9BE /* LaunchScreen.xib */; };
+		AD249A6D1B8ABD4F003AD9BE /* SFThemeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD249A6C1B8ABD4F003AD9BE /* SFThemeTests.m */; };
+		AD249A831B8ABE85003AD9BE /* SFStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = AD249A781B8ABE85003AD9BE /* SFStyle.m */; };
+		AD249A8B1B8ABE94003AD9BE /* ThemeDefault.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AD249A891B8ABE94003AD9BE /* ThemeDefault.bundle */; };
+		AD249A8C1B8ABE94003AD9BE /* ThemeDefault2.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AD249A8A1B8ABE94003AD9BE /* ThemeDefault2.bundle */; };
+		AD249A8F1B8ABFE7003AD9BE /* SFTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = AD249A8E1B8ABFE7003AD9BE /* SFTheme.m */; };
+		AD249A921B8AC1DF003AD9BE /* SFThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AD249A911B8AC1DF003AD9BE /* SFThemeManager.m */; };
+		AD249A951B8AC4D5003AD9BE /* UIColor+SFTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = AD249A941B8AC4D5003AD9BE /* UIColor+SFTheme.m */; };
+		AD249A981B8AC526003AD9BE /* UIFont+SFTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = AD249A971B8AC526003AD9BE /* UIFont+SFTheme.m */; };
+		AD249A9B1B8AC82F003AD9BE /* UIImage+SFTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = AD249A9A1B8AC82F003AD9BE /* UIImage+SFTheme.m */; };
+		AD249A9D1B8AE2FD003AD9BE /* SFTheme.podspec in Resources */ = {isa = PBXBuildFile; fileRef = AD249A9C1B8AE2FD003AD9BE /* SFTheme.podspec */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AD249A671B8ABD4F003AD9BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD249A451B8ABD4F003AD9BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD249A4C1B8ABD4F003AD9BE;
+			remoteInfo = SFTheme;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		11A543DF27A123149F7ACF7E /* Pods-SFTheme.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFTheme.release.xcconfig"; path = "Pods/Target Support Files/Pods-SFTheme/Pods-SFTheme.release.xcconfig"; sourceTree = "<group>"; };
+		156CA377F929A3848F611DE0 /* Pods-SFTheme.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFTheme.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SFTheme/Pods-SFTheme.debug.xcconfig"; sourceTree = "<group>"; };
+		8865928DAA65D38EE6AB6E8C /* libPods-SFTheme.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SFTheme.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD249A4D1B8ABD4F003AD9BE /* SFTheme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SFTheme.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD249A511B8ABD4F003AD9BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD249A521B8ABD4F003AD9BE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AD249A541B8ABD4F003AD9BE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AD249A551B8ABD4F003AD9BE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AD249A571B8ABD4F003AD9BE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AD249A581B8ABD4F003AD9BE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AD249A5B1B8ABD4F003AD9BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AD249A5D1B8ABD4F003AD9BE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AD249A601B8ABD4F003AD9BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		AD249A661B8ABD4F003AD9BE /* SFThemeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SFThemeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD249A6B1B8ABD4F003AD9BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD249A6C1B8ABD4F003AD9BE /* SFThemeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFThemeTests.m; sourceTree = "<group>"; };
+		AD249A771B8ABE85003AD9BE /* SFStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFStyle.h; sourceTree = "<group>"; };
+		AD249A781B8ABE85003AD9BE /* SFStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFStyle.m; sourceTree = "<group>"; };
+		AD249A891B8ABE94003AD9BE /* ThemeDefault.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ThemeDefault.bundle; sourceTree = "<group>"; };
+		AD249A8A1B8ABE94003AD9BE /* ThemeDefault2.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ThemeDefault2.bundle; sourceTree = "<group>"; };
+		AD249A8D1B8ABFE7003AD9BE /* SFTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFTheme.h; sourceTree = "<group>"; };
+		AD249A8E1B8ABFE7003AD9BE /* SFTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFTheme.m; sourceTree = "<group>"; };
+		AD249A901B8AC1DF003AD9BE /* SFThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFThemeManager.h; sourceTree = "<group>"; };
+		AD249A911B8AC1DF003AD9BE /* SFThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFThemeManager.m; sourceTree = "<group>"; };
+		AD249A931B8AC4D5003AD9BE /* UIColor+SFTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+SFTheme.h"; sourceTree = "<group>"; };
+		AD249A941B8AC4D5003AD9BE /* UIColor+SFTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+SFTheme.m"; sourceTree = "<group>"; };
+		AD249A961B8AC526003AD9BE /* UIFont+SFTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+SFTheme.h"; sourceTree = "<group>"; };
+		AD249A971B8AC526003AD9BE /* UIFont+SFTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+SFTheme.m"; sourceTree = "<group>"; };
+		AD249A991B8AC82F003AD9BE /* UIImage+SFTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SFTheme.h"; sourceTree = "<group>"; };
+		AD249A9A1B8AC82F003AD9BE /* UIImage+SFTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SFTheme.m"; sourceTree = "<group>"; };
+		AD249A9C1B8AE2FD003AD9BE /* SFTheme.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SFTheme.podspec; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD249A4A1B8ABD4F003AD9BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09A1676B37BEA6DB0AB09AC1 /* libPods-SFTheme.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD249A631B8ABD4F003AD9BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		17CD9697BF68DD2495690766 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8865928DAA65D38EE6AB6E8C /* libPods-SFTheme.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9920F702A3532E16CEF64A58 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				156CA377F929A3848F611DE0 /* Pods-SFTheme.debug.xcconfig */,
+				11A543DF27A123149F7ACF7E /* Pods-SFTheme.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AD249A441B8ABD4F003AD9BE = {
+			isa = PBXGroup;
+			children = (
+				AD249A9C1B8AE2FD003AD9BE /* SFTheme.podspec */,
+				AD249A4F1B8ABD4F003AD9BE /* SFTheme */,
+				AD249A691B8ABD4F003AD9BE /* SFThemeTests */,
+				AD249A4E1B8ABD4F003AD9BE /* Products */,
+				9920F702A3532E16CEF64A58 /* Pods */,
+				17CD9697BF68DD2495690766 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AD249A4E1B8ABD4F003AD9BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD249A4D1B8ABD4F003AD9BE /* SFTheme.app */,
+				AD249A661B8ABD4F003AD9BE /* SFThemeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD249A4F1B8ABD4F003AD9BE /* SFTheme */ = {
+			isa = PBXGroup;
+			children = (
+				AD249A761B8ABE85003AD9BE /* lib */,
+				AD249A541B8ABD4F003AD9BE /* AppDelegate.h */,
+				AD249A551B8ABD4F003AD9BE /* AppDelegate.m */,
+				AD249A571B8ABD4F003AD9BE /* ViewController.h */,
+				AD249A581B8ABD4F003AD9BE /* ViewController.m */,
+				AD249A5A1B8ABD4F003AD9BE /* Main.storyboard */,
+				AD249A5D1B8ABD4F003AD9BE /* Images.xcassets */,
+				AD249A5F1B8ABD4F003AD9BE /* LaunchScreen.xib */,
+				AD249A501B8ABD4F003AD9BE /* Supporting Files */,
+			);
+			path = SFTheme;
+			sourceTree = "<group>";
+		};
+		AD249A501B8ABD4F003AD9BE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AD249A891B8ABE94003AD9BE /* ThemeDefault.bundle */,
+				AD249A8A1B8ABE94003AD9BE /* ThemeDefault2.bundle */,
+				AD249A511B8ABD4F003AD9BE /* Info.plist */,
+				AD249A521B8ABD4F003AD9BE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AD249A691B8ABD4F003AD9BE /* SFThemeTests */ = {
+			isa = PBXGroup;
+			children = (
+				AD249A6C1B8ABD4F003AD9BE /* SFThemeTests.m */,
+				AD249A6A1B8ABD4F003AD9BE /* Supporting Files */,
+			);
+			path = SFThemeTests;
+			sourceTree = "<group>";
+		};
+		AD249A6A1B8ABD4F003AD9BE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AD249A6B1B8ABD4F003AD9BE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AD249A761B8ABE85003AD9BE /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				AD249A771B8ABE85003AD9BE /* SFStyle.h */,
+				AD249A781B8ABE85003AD9BE /* SFStyle.m */,
+				AD249A8D1B8ABFE7003AD9BE /* SFTheme.h */,
+				AD249A8E1B8ABFE7003AD9BE /* SFTheme.m */,
+				AD249A901B8AC1DF003AD9BE /* SFThemeManager.h */,
+				AD249A911B8AC1DF003AD9BE /* SFThemeManager.m */,
+				AD249A931B8AC4D5003AD9BE /* UIColor+SFTheme.h */,
+				AD249A941B8AC4D5003AD9BE /* UIColor+SFTheme.m */,
+				AD249A961B8AC526003AD9BE /* UIFont+SFTheme.h */,
+				AD249A971B8AC526003AD9BE /* UIFont+SFTheme.m */,
+				AD249A991B8AC82F003AD9BE /* UIImage+SFTheme.h */,
+				AD249A9A1B8AC82F003AD9BE /* UIImage+SFTheme.m */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD249A4C1B8ABD4F003AD9BE /* SFTheme */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD249A701B8ABD4F003AD9BE /* Build configuration list for PBXNativeTarget "SFTheme" */;
+			buildPhases = (
+				F37F38834A8E3793073AEDB3 /* Check Pods Manifest.lock */,
+				AD249A491B8ABD4F003AD9BE /* Sources */,
+				AD249A4A1B8ABD4F003AD9BE /* Frameworks */,
+				AD249A4B1B8ABD4F003AD9BE /* Resources */,
+				0E0A332DE28953EC33979884 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SFTheme;
+			productName = SFTheme;
+			productReference = AD249A4D1B8ABD4F003AD9BE /* SFTheme.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AD249A651B8ABD4F003AD9BE /* SFThemeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD249A731B8ABD4F003AD9BE /* Build configuration list for PBXNativeTarget "SFThemeTests" */;
+			buildPhases = (
+				AD249A621B8ABD4F003AD9BE /* Sources */,
+				AD249A631B8ABD4F003AD9BE /* Frameworks */,
+				AD249A641B8ABD4F003AD9BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD249A681B8ABD4F003AD9BE /* PBXTargetDependency */,
+			);
+			name = SFThemeTests;
+			productName = SFThemeTests;
+			productReference = AD249A661B8ABD4F003AD9BE /* SFThemeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD249A451B8ABD4F003AD9BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = sofach;
+				TargetAttributes = {
+					AD249A4C1B8ABD4F003AD9BE = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					AD249A651B8ABD4F003AD9BE = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = AD249A4C1B8ABD4F003AD9BE;
+					};
+				};
+			};
+			buildConfigurationList = AD249A481B8ABD4F003AD9BE /* Build configuration list for PBXProject "SFTheme" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD249A441B8ABD4F003AD9BE;
+			productRefGroup = AD249A4E1B8ABD4F003AD9BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD249A4C1B8ABD4F003AD9BE /* SFTheme */,
+				AD249A651B8ABD4F003AD9BE /* SFThemeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD249A4B1B8ABD4F003AD9BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD249A5C1B8ABD4F003AD9BE /* Main.storyboard in Resources */,
+				AD249A8C1B8ABE94003AD9BE /* ThemeDefault2.bundle in Resources */,
+				AD249A611B8ABD4F003AD9BE /* LaunchScreen.xib in Resources */,
+				AD249A9D1B8AE2FD003AD9BE /* SFTheme.podspec in Resources */,
+				AD249A5E1B8ABD4F003AD9BE /* Images.xcassets in Resources */,
+				AD249A8B1B8ABE94003AD9BE /* ThemeDefault.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD249A641B8ABD4F003AD9BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E0A332DE28953EC33979884 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SFTheme/Pods-SFTheme-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F37F38834A8E3793073AEDB3 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD249A491B8ABD4F003AD9BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD249A591B8ABD4F003AD9BE /* ViewController.m in Sources */,
+				AD249A981B8AC526003AD9BE /* UIFont+SFTheme.m in Sources */,
+				AD249A561B8ABD4F003AD9BE /* AppDelegate.m in Sources */,
+				AD249A831B8ABE85003AD9BE /* SFStyle.m in Sources */,
+				AD249A951B8AC4D5003AD9BE /* UIColor+SFTheme.m in Sources */,
+				AD249A8F1B8ABFE7003AD9BE /* SFTheme.m in Sources */,
+				AD249A531B8ABD4F003AD9BE /* main.m in Sources */,
+				AD249A9B1B8AC82F003AD9BE /* UIImage+SFTheme.m in Sources */,
+				AD249A921B8AC1DF003AD9BE /* SFThemeManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD249A621B8ABD4F003AD9BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD249A6D1B8ABD4F003AD9BE /* SFThemeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AD249A681B8ABD4F003AD9BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD249A4C1B8ABD4F003AD9BE /* SFTheme */;
+			targetProxy = AD249A671B8ABD4F003AD9BE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AD249A5A1B8ABD4F003AD9BE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD249A5B1B8ABD4F003AD9BE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AD249A5F1B8ABD4F003AD9BE /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD249A601B8ABD4F003AD9BE /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AD249A6E1B8ABD4F003AD9BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AD249A6F1B8ABD4F003AD9BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD249A711B8ABD4F003AD9BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 156CA377F929A3848F611DE0 /* Pods-SFTheme.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SFTheme/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AD249A721B8ABD4F003AD9BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11A543DF27A123149F7ACF7E /* Pods-SFTheme.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SFTheme/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AD249A741B8ABD4F003AD9BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SFThemeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SFTheme.app/SFTheme";
+			};
+			name = Debug;
+		};
+		AD249A751B8ABD4F003AD9BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SFThemeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SFTheme.app/SFTheme";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD249A481B8ABD4F003AD9BE /* Build configuration list for PBXProject "SFTheme" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD249A6E1B8ABD4F003AD9BE /* Debug */,
+				AD249A6F1B8ABD4F003AD9BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD249A701B8ABD4F003AD9BE /* Build configuration list for PBXNativeTarget "SFTheme" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD249A711B8ABD4F003AD9BE /* Debug */,
+				AD249A721B8ABD4F003AD9BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD249A731B8ABD4F003AD9BE /* Build configuration list for PBXNativeTarget "SFThemeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD249A741B8ABD4F003AD9BE /* Debug */,
+				AD249A751B8ABD4F003AD9BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AD249A451B8ABD4F003AD9BE /* Project object */;
+}
