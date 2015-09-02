@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "SFTheme"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "更改应用主题"
 
   s.description  = <<-DESC
@@ -17,12 +17,12 @@ Pod::Spec.new do |s|
   s.platform     = :ios
   s.platform     = :ios, "5.0"
 
-  s.source       = { :git => "https://github.com/sofach/SFTheme.git", :tag => "1.0.0" }
+  s.source       = { :git => "https://github.com/sofach/SFTheme.git", :tag => "1.0.1" }
 
   s.source_files  = "SFTheme/lib/**/*.{h,m}"
 
   s.requires_arc = true
 
-  s.dependency "AFNetworking"
+  s.dependency "CocoaLumberjack"
 
 end

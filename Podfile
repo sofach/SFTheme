@@ -3,7 +3,7 @@
 
 target 'SFTheme' do
 
-pod 'CocoaLumberjack', '~>2.0.1'
+pod 'CocoaLumberjack'
 
 end
 

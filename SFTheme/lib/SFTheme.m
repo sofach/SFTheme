@@ -110,11 +110,12 @@ static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
     }
     UIImage *img = nil;
     
-    //if current scal=3, search for 3x first, if not found, search for 2x ...
     if (_bundle) {
         NSString *imgName = [NSString stringWithFormat:@"%@/%@", [_bundle.bundlePath lastPathComponent], name];
         img = [UIImage imageNamed:imgName];
     }
+    
+    //if current scal=3, search for 3x first, if not found, search for 2x ...
     if (_path) {
         NSInteger scale = [UIScreen mainScreen].scale;
         while (scale>1) {
