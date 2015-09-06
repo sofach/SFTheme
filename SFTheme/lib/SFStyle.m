@@ -5,12 +5,9 @@
 //  Created by 陈少华 on 15/4/10.
 //  Copyright (c) 2015年 sofach. All rights reserved.
 //
-#import <CocoaLumberjack.h>
 
 #import "SFStyle.h"
 #import "SFThemeManager.h"
-
-static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
 
 @interface SFStyle ()
 
@@ -42,7 +39,7 @@ static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
 - (UIFont *)fontValue
 {
     if (self.type != SFStyleTypeFont) {
-        DDLogWarn(@"%@ is not font", _name);
+        NSLog(@"warn: %@ is not font", _name);
         return nil;
     }
     if (!_fontValue) {
@@ -55,14 +52,14 @@ static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
 - (UIColor *)colorValue
 {
     if (self.type != SFStyleTypeColor) {
-        DDLogWarn(@"warm: not color");
+        NSLog(@"warm: not color");
         return nil;
     }
     
     if (!_colorValue) {
         NSArray *rgb = [[self.value stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] componentsSeparatedByString:@","];
         if (rgb.count != 4) {
-            DDLogError(@"error: color style format should be [r,g,b,alpha]");
+            NSLog(@"error: color style format should be [r,g,b,alpha]");
             return nil;
         }
         _colorValue = [UIColor colorWithRed:[rgb[0] floatValue]/255 green:[rgb[1] floatValue]/255 blue:[rgb[2] floatValue]/255 alpha:[rgb[3] floatValue]];

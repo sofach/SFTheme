@@ -5,7 +5,6 @@
 //  Created by 陈少华 on 15/4/13.
 //  Copyright (c) 2015年 inmovation. All rights reserved.
 //
-#import <CocoaLumberjack.h>
 
 #import "AppDelegate.h"
 #import "SFTheme.h"
@@ -20,8 +19,6 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    [DDLog addLogger:[DDASLLogger sharedInstance]];
-    [DDLog addLogger:[DDTTYLogger sharedInstance]];
     [[SFThemeManager sharedInstence] useTheme:[SFTheme themeWithBundleName:@"ThemeDefault"]];
     return YES;
 }

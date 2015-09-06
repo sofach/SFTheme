@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		09A1676B37BEA6DB0AB09AC1 /* libPods-SFTheme.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8865928DAA65D38EE6AB6E8C /* libPods-SFTheme.a */; };
 		AD249A531B8ABD4F003AD9BE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD249A521B8ABD4F003AD9BE /* main.m */; };
 		AD249A561B8ABD4F003AD9BE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD249A551B8ABD4F003AD9BE /* AppDelegate.m */; };
 		AD249A591B8ABD4F003AD9BE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD249A581B8ABD4F003AD9BE /* ViewController.m */; };
@@ -37,9 +36,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		11A543DF27A123149F7ACF7E /* Pods-SFTheme.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFTheme.release.xcconfig"; path = "Pods/Target Support Files/Pods-SFTheme/Pods-SFTheme.release.xcconfig"; sourceTree = "<group>"; };
-		156CA377F929A3848F611DE0 /* Pods-SFTheme.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFTheme.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SFTheme/Pods-SFTheme.debug.xcconfig"; sourceTree = "<group>"; };
-		8865928DAA65D38EE6AB6E8C /* libPods-SFTheme.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SFTheme.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD249A4D1B8ABD4F003AD9BE /* SFTheme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SFTheme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD249A511B8ABD4F003AD9BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD249A521B8ABD4F003AD9BE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -75,7 +71,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09A1676B37BEA6DB0AB09AC1 /* libPods-SFTheme.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,23 +84,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		17CD9697BF68DD2495690766 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				8865928DAA65D38EE6AB6E8C /* libPods-SFTheme.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		9920F702A3532E16CEF64A58 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				156CA377F929A3848F611DE0 /* Pods-SFTheme.debug.xcconfig */,
-				11A543DF27A123149F7ACF7E /* Pods-SFTheme.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		AD249A441B8ABD4F003AD9BE = {
 			isa = PBXGroup;
 			children = (
@@ -113,8 +91,6 @@
 				AD249A4F1B8ABD4F003AD9BE /* SFTheme */,
 				AD249A691B8ABD4F003AD9BE /* SFThemeTests */,
 				AD249A4E1B8ABD4F003AD9BE /* Products */,
-				9920F702A3532E16CEF64A58 /* Pods */,
-				17CD9697BF68DD2495690766 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -197,11 +173,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AD249A701B8ABD4F003AD9BE /* Build configuration list for PBXNativeTarget "SFTheme" */;
 			buildPhases = (
-				F37F38834A8E3793073AEDB3 /* Check Pods Manifest.lock */,
 				AD249A491B8ABD4F003AD9BE /* Sources */,
 				AD249A4A1B8ABD4F003AD9BE /* Frameworks */,
 				AD249A4B1B8ABD4F003AD9BE /* Resources */,
-				0E0A332DE28953EC33979884 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -289,39 +263,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		0E0A332DE28953EC33979884 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SFTheme/Pods-SFTheme-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F37F38834A8E3793073AEDB3 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AD249A491B8ABD4F003AD9BE /* Sources */ = {
@@ -460,7 +401,6 @@
 		};
 		AD249A711B8ABD4F003AD9BE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 156CA377F929A3848F611DE0 /* Pods-SFTheme.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SFTheme/Info.plist;
@@ -471,7 +411,6 @@
 		};
 		AD249A721B8ABD4F003AD9BE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 11A543DF27A123149F7ACF7E /* Pods-SFTheme.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SFTheme/Info.plist;

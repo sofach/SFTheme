@@ -5,12 +5,9 @@
 //  Created by 陈少华 on 15/8/24.
 //  Copyright (c) 2015年 sofach. All rights reserved.
 //
-#import <CocoaLumberjack.h>
 
 #import "SFTheme.h"
 #import "SFStyle.h"
-
-static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
 
 @interface SFTheme ()
 
@@ -61,7 +58,7 @@ static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
 {
     NSString *plistPath = [bundle pathForResource:@"theme" ofType:@"plist"];
     if (!plistPath || plistPath.length<=0) {
-        DDLogError(@"theme plist not found in bundle:%@", bundle.bundlePath);
+        NSLog(@"error: theme plist not found in bundle:%@", bundle.bundlePath);
         return;
     }
     _bundle = bundle;
@@ -73,7 +70,7 @@ static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
 {
     NSString *plistPath = [path stringByAppendingPathComponent:@"theme.plist"];
     if (!plistPath || plistPath.length<=0) {
-        DDLogError(@"theme plist not found at path:%@", path);
+        NSLog(@"error: theme plist not found at path:%@", path);
         return;
     }
     _path = path;
@@ -129,7 +126,7 @@ static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
     }
     
     if (!img) {
-        DDLogWarn(@"the image name:%@ not found", name);
+        NSLog(@"warn: the image name:%@ not found", name);
         return nil;
     }
     return img;
@@ -142,7 +139,7 @@ static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
     }
     SFStyle *style = [self.styles objectForKey:name];
     if (!style) {
-        DDLogWarn(@"the color named:%@ not found", name);
+        NSLog(@"warn: the color named:%@ not found", name);
         return nil;
     }
     return style.colorValue;
@@ -155,7 +152,7 @@ static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
     }
     SFStyle *style = [self.styles objectForKey:name];
     if (!style) {
-        DDLogError(@"the font named:%@ not found", name);
+        NSLog(@"warn: the font named:%@ not found", name);
         return nil;
     }
     return style.fontValue;
