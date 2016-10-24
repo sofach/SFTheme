@@ -56,5 +56,6 @@
  */
 - (UIFont *)fontForName:(NSString *)name;
 
+- (UIFont *)fontForName:(NSString *)name fontFamily:(NSString *)fontFamily;
 
 @end

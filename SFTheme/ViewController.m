@@ -26,7 +26,6 @@
     
     [self setTheme];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(setTheme) name:SFNotificationThemeChanged object:nil];
-
 }
 
 - (void)didReceiveMemoryWarning {
@@ -43,7 +42,7 @@
 - (void)setTheme
 {
     _imgView.image = [UIImage imageForName:@"default_user"];
-    _label.font = [UIFont fontForText1];
+    _label.font = [UIFont fontForText1WithFontFamily:SFFontFamilyPingFangSCMedium];
     _label.textColor = [UIColor colorForText1];
 }
 

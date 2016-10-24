@@ -26,6 +26,8 @@
 - (BOOL)synchronize;
 
 - (UIFont *)fontForName:(NSString *)name;
+- (UIFont *)fontForName:(NSString *)name fontFamily:(NSString *)fontFamily;
+
 - (UIColor *)colorForName:(NSString *)name;
 - (UIImage *)imageForName:(NSString *)name;
 

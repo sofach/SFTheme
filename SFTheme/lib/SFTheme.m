@@ -17,8 +17,7 @@
 
 @implementation SFTheme
 
-- (id)init
-{
+- (id)init {
     self = [super init];
     if (self) {
         _styles = [NSMutableDictionary dictionary];
@@ -26,24 +25,21 @@
     return self;
 }
 
-+ (SFTheme *)themeWithBundleName:(NSString *)bundleName
-{
++ (SFTheme *)themeWithBundleName:(NSString *)bundleName {
     NSBundle *themeBundle = [NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:bundleName ofType:@"bundle"]];
     SFTheme *theme = [[SFTheme alloc] init];
     theme.bundle = themeBundle;
     return theme;
 }
 
-+ (SFTheme *)themeWithPath:(NSString *)path
-{
++ (SFTheme *)themeWithPath:(NSString *)path {
     SFTheme *theme = [[SFTheme alloc] init];
     theme.path = path;
     return theme;
 }
 
 #pragma mark - getter setter
-- (void)setPlistPath:(NSString *)plistPath
-{
+- (void)setPlistPath:(NSString *)plistPath {
     _plistPath = plistPath;
     NSDictionary *dic = [NSDictionary dictionaryWithContentsOfFile:_plistPath];
     for (NSString *key in dic.allKeys) {
@@ -54,8 +50,7 @@
     }
 }
 
-- (void)setBundle:(NSBundle *)bundle
-{
+- (void)setBundle:(NSBundle *)bundle {
     NSString *plistPath = [bundle pathForResource:@"theme" ofType:@"plist"];
     if (!plistPath || plistPath.length<=0) {
         NSLog(@"error: theme plist not found in bundle:%@", bundle.bundlePath);
@@ -66,8 +61,7 @@
     self.plistPath = plistPath;
 }
 
-- (void)setPath:(NSString *)path
-{
+- (void)setPath:(NSString *)path {
     NSString *plistPath = [path stringByAppendingPathComponent:@"theme.plist"];
     if (!plistPath || plistPath.length<=0) {
         NSLog(@"error: theme plist not found at path:%@", path);
@@ -82,8 +76,7 @@
 
 
 #pragma mark public method
-- (NSDictionary *)dictionary
-{
+- (NSDictionary *)dictionary {
     NSMutableDictionary *dic = [NSMutableDictionary dictionary];
     for (NSString *key in self.styles.allKeys) {
         SFStyle *style = self.styles[key];
@@ -92,16 +85,14 @@
     return dic;
 }
 
-- (BOOL)synchronize
-{
+- (BOOL)synchronize {
     if (!self.plistPath) {
         return NO;
     }
     return [[self dictionary] writeToFile:self.plistPath atomically:YES];
 }
 
-- (UIImage *)imageForName:(NSString *)name
-{
+- (UIImage *)imageForName:(NSString *)name {
     if (!name) {
         return nil;
     }
@@ -132,8 +123,7 @@
     return img;
 }
 
-- (UIColor *)colorForName:(NSString *)name
-{
+- (UIColor *)colorForName:(NSString *)name {
     if (!name) {
         return nil;
     }
@@ -142,11 +132,10 @@
         NSLog(@"warn: the color named:%@ not found", name);
         return nil;
     }
-    return style.colorValue;
+    return [style colorValue];
 }
 
-- (UIFont *)fontForName:(NSString *)name
-{
+- (UIFont *)fontForName:(NSString *)name {
     if (!name) {
         return nil;
     }
@@ -155,7 +144,19 @@
         NSLog(@"warn: the font named:%@ not found", name);
         return nil;
     }
-    return style.fontValue;
+    return [style fontValue];
+}
+
+- (UIFont *)fontForName:(NSString *)name fontFamily:(NSString *)fontFamily {
+    if (!name) {
+        return nil;
+    }
+    SFStyle *style = [self.styles objectForKey:name];
+    if (!style) {
+        NSLog(@"warn: the font named:%@ not found", name);
+        return nil;
+    }
+    return [style fontValueWithFontFamily:fontFamily];
 }
 
 @end

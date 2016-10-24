@@ -20,8 +20,7 @@
 @implementation SFThemeManager
 @synthesize fontOffset = _fontOffset;
 
-+ (instancetype)sharedInstence
-{
++ (instancetype)sharedInstence {
     static id sharedInstence = nil;
     static dispatch_once_t predicate;
     dispatch_once(&predicate, ^{
@@ -30,8 +29,7 @@
     return sharedInstence;
 }
 
-- (id)init
-{
+- (id)init {
     self = [super init];
     if (self) {
         _fontOffset = CGFLOAT_MAX;
@@ -39,42 +37,40 @@
     return self;
 }
 
-- (CGFloat)fontOffset
-{
+- (CGFloat)fontOffset {
     if (_fontOffset>1000000.0) {
         _fontOffset = [[NSUserDefaults standardUserDefaults] floatForKey:SFUserDefaultThemeFontOffset];
     }
     return _fontOffset;
 }
 
-- (void)setFontOffset:(CGFloat)fontOffset
-{
+- (void)setFontOffset:(CGFloat)fontOffset {
     if (_fontOffset != fontOffset) {
         _fontOffset = fontOffset;
         [[NSUserDefaults standardUserDefaults] setFloat:_fontOffset forKey:SFUserDefaultThemeFontOffset];
     }
 }
 
-- (void)useTheme:(SFTheme *)theme
-{
+- (void)useTheme:(SFTheme *)theme {
     _theme = theme;
     self.fontOffset = 0.0;
     [[NSNotificationCenter defaultCenter] postNotificationName:SFNotificationThemeChanged object:theme];
 }
 
-- (UIImage *)imageForName:(NSString *)name
-{
+- (UIImage *)imageForName:(NSString *)name {
     return [self.theme imageForName:name];
 }
 
-- (UIColor *)colorForName:(NSString *)name
-{
+- (UIColor *)colorForName:(NSString *)name {
     return [self.theme colorForName:name];
 }
 
-- (UIFont *)fontForName:(NSString *)name
-{
+- (UIFont *)fontForName:(NSString *)name {
     return [self.theme fontForName:name];
+}
+
+- (UIFont *)fontForName:(NSString *)name fontFamily:(NSString *)fontFamily {
+    return [self.theme fontForName:name fontFamily:fontFamily];
 }
 
 @end

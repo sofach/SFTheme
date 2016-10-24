@@ -24,6 +24,8 @@ typedef enum{
 - (NSDictionary *)dictionary;
 
 - (UIFont *)fontValue;
+- (UIFont *)fontValueWithFontFamily:(NSString *)fontFamily;
+
 - (UIColor *)colorValue;
 
 @end

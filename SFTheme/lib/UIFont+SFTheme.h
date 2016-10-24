@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+//目前这几种字体常用
+typedef enum {
+    SFFontFamilyPingFangSC = 0,
+    SFFontFamilyPingFangSCLight,
+    SFFontFamilyPingFangSCMedium
+}SFFontFamily;
+
 //以下几个必须得在theme.plist中定义
 //字体大小
 #define SFFontNaviBarTitle @"naviBarTitleFont"
@@ -23,12 +30,25 @@
 @interface UIFont (SFTheme)
 
 + (UIFont *)fontForName:(NSString *)name;
++ (UIFont *)fontForName:(NSString *)name fontFamily:(SFFontFamily)fontFamily;
++ (UIFont *)fontForName:(NSString *)name fontFamilyName:(NSString *)fontFamilyName;
 
 + (UIFont *)fontForNaviBarTitle;
++ (UIFont *)fontForNaviBarTitleWithFontFamily:(SFFontFamily)fontFamily;
+
 + (UIFont *)fontForNaviBarItemTitle;
++ (UIFont *)fontForNaviBarItemTitleWithFontFamily:(SFFontFamily)fontFamily;
+
 + (UIFont *)fontForTabBarItemTitle;
++ (UIFont *)fontForTabBarItemTitleWithFontFamily:(SFFontFamily)fontFamily;
+
 + (UIFont *)fontForText1;
++ (UIFont *)fontForText1WithFontFamily:(SFFontFamily)fontFamily;
+
 + (UIFont *)fontForText2;
++ (UIFont *)fontForText2WithFontFamily:(SFFontFamily)fontFamily;
+
 + (UIFont *)fontForText3;
++ (UIFont *)fontForText3WithFontFamily:(SFFontFamily)fontFamily;
 
 @end
