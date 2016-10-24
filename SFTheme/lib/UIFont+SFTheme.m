@@ -39,7 +39,17 @@
 + (UIFont *)fontForName:(NSString *)name fontFamilyName:(NSString *)fontFamilyName {
     return [[SFThemeManager sharedInstence] fontForName:name fontFamily:fontFamilyName];
 }
-
++ (UIFont *)fontOfSize:(CGFloat)size fontFamily:(SFFontFamily)fontFamily {
+    NSString *fontFamilyName = [UIFont fontFamily:fontFamily];
+    return [self fontOfSize:size fontFamilyName:fontFamilyName];
+}
++ (UIFont *)fontOfSize:(CGFloat)size fontFamilyName:(NSString *)fontFamilyName {
+    UIFont *font = [UIFont fontWithName:fontFamilyName size:size];
+    if (!font) {
+        font = [UIFont systemFontOfSize:size];
+    }
+    return font;
+}
 
 + (UIFont *)fontForNaviBarTitle {
     return [self fontForName:SFFontNaviBarTitle];

@@ -32,6 +32,8 @@ typedef enum {
 + (UIFont *)fontForName:(NSString *)name;
 + (UIFont *)fontForName:(NSString *)name fontFamily:(SFFontFamily)fontFamily;
 + (UIFont *)fontForName:(NSString *)name fontFamilyName:(NSString *)fontFamilyName;
++ (UIFont *)fontOfSize:(CGFloat)size fontFamily:(SFFontFamily)fontFamily;
++ (UIFont *)fontOfSize:(CGFloat)size fontFamilyName:(NSString *)fontFamilyName;
 
 + (UIFont *)fontForNaviBarTitle;
 + (UIFont *)fontForNaviBarTitleWithFontFamily:(SFFontFamily)fontFamily;
