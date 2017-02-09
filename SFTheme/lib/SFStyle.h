@@ -11,6 +11,7 @@
 typedef enum{
     SFStyleTypeFont = 0,
     SFStyleTypeColor,
+    SFStyleTypeNumber,
     SFStyleTypeOther
 }SFStyleType;
 
@@ -27,5 +28,7 @@ typedef enum{
 - (UIFont *)fontValueWithFontFamily:(NSString *)fontFamily;
 
 - (UIColor *)colorValue;
+
+- (NSNumber *)numberValue;
 
 @end

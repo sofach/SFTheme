@@ -7,28 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SFThemeManager.h"
-#import "UIColor+SFTheme.h"
-#import "UIFont+SFTheme.h"
-#import "UIImage+SFTheme.h"
+#import "SFStyle.h"
 
+#define NMWThemePlistName @"theme"
 @interface SFTheme : NSObject
 
-@property (strong, nonatomic) NSBundle *bundle;
-@property (strong, nonatomic) NSString *path;
-
-@property (strong, nonatomic) NSMutableDictionary *styles;
-
 + (SFTheme *)themeWithBundleName:(NSString *)bundleName;
-+ (SFTheme *)themeWithPath:(NSString *)path;
 
-- (NSDictionary *)dictionary;
-- (BOOL)synchronize;
+- (void)addStylesWithBundleName:(NSString *)bundleName;
 
-- (UIFont *)fontForName:(NSString *)name;
-- (UIFont *)fontForName:(NSString *)name fontFamily:(NSString *)fontFamily;
-
-- (UIColor *)colorForName:(NSString *)name;
-- (UIImage *)imageForName:(NSString *)name;
+- (SFStyle *)styleForName:(NSString *)name;
 
 @end

@@ -20,9 +20,12 @@ typedef enum {
 #define SFFontNaviBarTitle @"naviBarTitleFont"
 #define SFFontNaviBarItemTitle @"naviBarItemTitleFont"
 #define SFFontTabBarItemTitle @"tabBarItemTitleFont"
-#define SFFontText1 @"textFont1"
-#define SFFontText2 @"textFont2"
-#define SFFontText3 @"textFont3"
+
+#define SFFontTitle1 @"titleFont1"
+#define SFFontTitle2 @"titleFont2"
+#define SFFontContent1 @"contentFont1"
+#define SFFontContent2 @"contentFont2"
+#define SFFontContent3 @"contentFont3"
 
 /**
  *  推荐使用该category中的方法来获字体大小，这样可以方便的更换主题
@@ -44,13 +47,19 @@ typedef enum {
 + (UIFont *)fontForTabBarItemTitle;
 + (UIFont *)fontForTabBarItemTitleWithFontFamily:(SFFontFamily)fontFamily;
 
-+ (UIFont *)fontForText1;
-+ (UIFont *)fontForText1WithFontFamily:(SFFontFamily)fontFamily;
++ (UIFont *)fontForTitle1;
++ (UIFont *)fontForTitle1WithFontFamily:(SFFontFamily)fontFamily;
 
-+ (UIFont *)fontForText2;
-+ (UIFont *)fontForText2WithFontFamily:(SFFontFamily)fontFamily;
++ (UIFont *)fontForTitle2;
++ (UIFont *)fontForTitle2WithFontFamily:(SFFontFamily)fontFamily;
 
-+ (UIFont *)fontForText3;
-+ (UIFont *)fontForText3WithFontFamily:(SFFontFamily)fontFamily;
++ (UIFont *)fontForContent1;
++ (UIFont *)fontForContent1WithFontFamily:(SFFontFamily)fontFamily;
+
++ (UIFont *)fontForContent2;
++ (UIFont *)fontForContent2WithFontFamily:(SFFontFamily)fontFamily;
+
++ (UIFont *)fontForContent3;
++ (UIFont *)fontForContent3WithFontFamily:(SFFontFamily)fontFamily;
 
 @end

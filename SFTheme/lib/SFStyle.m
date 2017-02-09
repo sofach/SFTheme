@@ -33,7 +33,7 @@
 
 - (UIFont *)fontValue {
     if (self.type != SFStyleTypeFont) {
-        NSLog(@"warn: %@ is not font", _name);
+        NSLog(@"[warn] %@ is not font", _name);
         return nil;
     }
     
@@ -43,6 +43,11 @@
 }
 
 - (UIFont *)fontValueWithFontFamily:(NSString *)fontFamily {
+    if (self.type != SFStyleTypeFont) {
+        NSLog(@"[warn] %@ is not font", _name);
+        return nil;
+    }
+
     UIFont *font = [UIFont fontWithName:fontFamily size:[self.value floatValue]+[SFThemeManager sharedInstence].fontOffset];
     if (!font) {
         font = [UIFont systemFontOfSize:[self.value floatValue]+[SFThemeManager sharedInstence].fontOffset];
@@ -52,18 +57,27 @@
 
 - (UIColor *)colorValue {
     if (self.type != SFStyleTypeColor) {
-        NSLog(@"warm: not color");
+        NSLog(@"[warm] not color");
         return nil;
     }
     
     NSArray *rgb = [[self.value stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] componentsSeparatedByString:@","];
     if (rgb.count != 4) {
-        NSLog(@"error: color style format should be [r,g,b,alpha]");
+        NSLog(@"[error] color style format should be [r,g,b,alpha]");
         return nil;
     }
     UIColor *color = [UIColor colorWithRed:[rgb[0] floatValue]/255 green:[rgb[1] floatValue]/255 blue:[rgb[2] floatValue]/255 alpha:[rgb[3] floatValue]];
     
     return color;
+}
+
+- (NSNumber *)numberValue {
+    if (self.type != SFStyleTypeNumber) {
+        NSLog(@"[warn] %@ is not number", _name);
+        return nil;
+    }
+
+    return [NSNumber numberWithDouble:self.value.doubleValue];
 }
 
 @end

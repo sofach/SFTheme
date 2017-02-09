@@ -2,20 +2,27 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>textColor2</key>
+	<key>titleColor2</key>
 	<dict>
 		<key>type</key>
 		<string>1</string>
 		<key>value</key>
 		<string>100,100,100,1</string>
 	</dict>
-	<key>textColor1</key>
+	<key>titleColor1</key>
 	<dict>
 		<key>type</key>
 		<string>1</string>
 		<key>value</key>
 		<string>50,50,50,1</string>
 	</dict>
+    <key>borderColor</key>
+    <dict>
+        <key>type</key>
+        <string>1</string>
+        <key>value</key>
+        <string>200,200,200,1</string>
+    </dict>
 	<key>viewBackgroundColor</key>
 	<dict>
 		<key>type</key>
@@ -37,7 +44,7 @@
 		<key>value</key>
 		<string>0,0,0,1</string>
 	</dict>
-	<key>tabBarBarTintColor</key>
+	<key>tabBarColor</key>
 	<dict>
 		<key>type</key>
 		<string>1</string>
@@ -51,13 +58,6 @@
 		<key>value</key>
 		<string>55,55,55,1</string>
 	</dict>
-	<key>tabBarTintColor</key>
-	<dict>
-		<key>type</key>
-		<string>1</string>
-		<key>value</key>
-		<string>55,55,55,1</string>
-	</dict>
 	<key>naviBarTitleColor</key>
 	<dict>
 		<key>type</key>
@@ -65,28 +65,21 @@
 		<key>value</key>
 		<string>55,55,55,1</string>
 	</dict>
-	<key>naviBarBarTintColor</key>
-	<dict>
-		<key>type</key>
-		<string>1</string>
-		<key>value</key>
-		<string>255,255,255,1</string>
-	</dict>
-	<key>naviBarTintColor</key>
+	<key>naviBarColor</key>
 	<dict>
 		<key>type</key>
 		<string>1</string>
 		<key>value</key>
 		<string>55,55,55,1</string>
 	</dict>
-	<key>textFont2</key>
+	<key>titleFont2</key>
 	<dict>
 		<key>type</key>
 		<string>0</string>
 		<key>value</key>
 		<string>14</string>
 	</dict>
-	<key>textFont1</key>
+	<key>titleFont1</key>
 	<dict>
 		<key>type</key>
 		<string>0</string>

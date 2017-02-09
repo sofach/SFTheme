@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "SFTheme.h"
+#import "SFThemeManager.h"
 
 @interface AppDelegate ()
 
@@ -19,7 +19,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    [[SFThemeManager sharedInstence] useTheme:[SFTheme themeWithBundleName:@"ThemeDefault"]];
+    [[SFThemeManager sharedInstence] applyTheme:[SFTheme themeWithBundleName:@"ThemeDefault"]];
+
     return YES;
 }
 

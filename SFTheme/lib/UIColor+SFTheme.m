@@ -12,17 +12,13 @@
 @implementation UIColor (SFTheme)
 
 + (UIColor *)colorForName:(NSString *)name {
-    return [[SFThemeManager sharedInstence] colorForName:name];
+    return [[[SFThemeManager sharedInstence].theme styleForName:name] colorValue];
 }
 
 
 /************ navigation bar color *****************/
-+ (UIColor *)colorForNaviBarTint {
-    return [self colorForName:SFColorNaviBarTint];
-}
-
-+ (UIColor *)colorForNaviBarBarTint {
-    return [self colorForName:SFColorNaviBarBarTint];
++ (UIColor *)colorForNaviBar {
+    return [self colorForName:SFColorNaviBar];
 }
 
 + (UIColor *)colorForNaviBarTitle {
@@ -35,12 +31,8 @@
 
 
 /************* tab bar color *****************/
-+ (UIColor *)colorForTabBarTint {
-    return [self colorForName:SFColorTabBarTint];
-}
-
-+ (UIColor *)colorForTabBarBarTint {
-    return [self colorForName:SFColorTabBarBarTint];
++ (UIColor *)colorForTabBar {
+    return [self colorForName:SFColorTabBar];
 }
 
 + (UIColor *)colorForTabBarItemTitleNormal {
@@ -62,17 +54,42 @@
 }
 
 
+/************** line color ***************/
++ (UIColor *)colorForLine {
+    return [self colorForName:SFColorLine];
+}
+
++ (UIColor *)colorForBorder {
+    return [self colorForName:SFColorBorder];
+}
+
++ (UIColor *)colorForMajor {
+    return [self colorForName:SFColorMajor];
+}
+
++ (UIColor *)colorForMinor {
+    return [self colorForName:SFColorMinor];
+}
+
+
 /************** text color ***************/
-+ (UIColor *)colorForText1 {
-    return [self colorForName:SFColorText1];
++ (UIColor *)colorForTitle1 {
+    return [self colorForName:SFColorTitle1];
 }
 
-+ (UIColor *)colorForText2 {
-    return [self colorForName:SFColorText2];
++ (UIColor *)colorForTitle2 {
+    return [self colorForName:SFColorTitle2];
 }
 
-+ (UIColor *)colorForText3 {
-    return [self colorForName:SFColorText3];
++ (UIColor *)colorForContent1 {
+    return [self colorForName:SFColorContent1];
 }
 
++ (UIColor *)colorForContent2 {
+    return [self colorForName:SFColorContent2];
+}
+
++ (UIColor *)colorForContent3 {
+    return [self colorForName:SFColorContent3];
+}
 @end

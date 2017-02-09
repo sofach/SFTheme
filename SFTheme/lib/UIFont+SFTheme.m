@@ -30,19 +30,23 @@
 }
 
 + (UIFont *)fontForName:(NSString *)name {
-    return [[SFThemeManager sharedInstence] fontForName:name];
+    return [[[SFThemeManager sharedInstence].theme styleForName:name] fontValue];
 }
+
 + (UIFont *)fontForName:(NSString *)name fontFamily:(SFFontFamily)fontFamily {
     NSString *fontFamilyName = [UIFont fontFamily:fontFamily];
     return [self fontForName:name fontFamilyName:fontFamilyName];
 }
+
 + (UIFont *)fontForName:(NSString *)name fontFamilyName:(NSString *)fontFamilyName {
-    return [[SFThemeManager sharedInstence] fontForName:name fontFamily:fontFamilyName];
+    return [[[SFThemeManager sharedInstence].theme styleForName:name] fontValueWithFontFamily:fontFamilyName];
 }
+
 + (UIFont *)fontOfSize:(CGFloat)size fontFamily:(SFFontFamily)fontFamily {
     NSString *fontFamilyName = [UIFont fontFamily:fontFamily];
     return [self fontOfSize:size fontFamilyName:fontFamilyName];
 }
+
 + (UIFont *)fontOfSize:(CGFloat)size fontFamilyName:(NSString *)fontFamilyName {
     UIFont *font = [UIFont fontWithName:fontFamilyName size:size];
     if (!font) {
@@ -73,25 +77,35 @@
     return [self fontForName:SFFontTabBarItemTitle fontFamily:fontFamily];
 }
 
-+ (UIFont *)fontForText1 {
-    return [self fontForName:SFFontText1];
++ (UIFont *)fontForTitle1 {
+    return [self fontForName:SFFontTitle1];
 }
-+ (UIFont *)fontForText1WithFontFamily:(SFFontFamily)fontFamily {
-    return [self fontForName:SFFontText1 fontFamily:fontFamily];
++ (UIFont *)fontForTitle1WithFontFamily:(SFFontFamily)fontFamily {
+    return [self fontForName:SFFontTitle1 fontFamily:fontFamily];
 }
-
-+ (UIFont *)fontForText2 {
-    return [self fontForName:SFFontText2];
++ (UIFont *)fontForTitle2 {
+    return [self fontForName:SFFontTitle2];
 }
-+ (UIFont *)fontForText2WithFontFamily:(SFFontFamily)fontFamily {
-    return [self fontForName:SFFontText2 fontFamily:fontFamily];
-}
-
-+ (UIFont *)fontForText3 {
-    return [self fontForName:SFFontText3];
-}
-+ (UIFont *)fontForText3WithFontFamily:(SFFontFamily)fontFamily {
-    return [self fontForName:SFFontText3 fontFamily:fontFamily];
++ (UIFont *)fontForTitle2WithFontFamily:(SFFontFamily)fontFamily {
+    return [self fontForName:SFFontTitle2 fontFamily:fontFamily];
 }
 
++ (UIFont *)fontForContent1 {
+    return [self fontForName:SFFontContent1];
+}
++ (UIFont *)fontForContent1WithFontFamily:(SFFontFamily)fontFamily {
+    return [self fontForName:SFFontContent1 fontFamily:fontFamily];
+}
++ (UIFont *)fontForContent2 {
+    return [self fontForName:SFFontContent2];
+}
++ (UIFont *)fontForContent2WithFontFamily:(SFFontFamily)fontFamily {
+    return [self fontForName:SFFontContent2 fontFamily:fontFamily];
+}
++ (UIFont *)fontForContent3 {
+    return [self fontForName:SFFontContent3];
+}
++ (UIFont *)fontForContent3WithFontFamily:(SFFontFamily)fontFamily {
+    return [self fontForName:SFFontContent3 fontFamily:fontFamily];
+}
 @end

@@ -9,22 +9,28 @@
 #import <UIKit/UIKit.h>
 
 //color
-#define SFColorNaviBarTint @"naviBarTintColor"
-#define SFColorNaviBarBarTint @"naviBarBarTintColor"
+#define SFColorNaviBar @"naviBarColor"
 #define SFColorNaviBarTitle @"naviBarTitleColor"
 #define SFColorNaviBarItemTitle @"naviBarItemTitleColor"
 
-#define SFColorTabBarTint @"tabBarTintColor"
-#define SFColorTabBarBarTint @"tabBarBarTintColor"
+#define SFColorTabBar @"tabBarColor"
 #define SFColorTabBarItemTitleNormal @"tabBarItemTitleNormalColor"
 #define SFColorTabBarItemTitleSelected @"tabBarItemTitleSelectedColor"
 
 #define SFColorViewBackground @"viewBackgroundColor"
 #define SFColorViewContent @"viewContentColor"
 
-#define SFColorText1 @"textColor1"
-#define SFColorText2 @"textColor2"
-#define SFColorText3 @"textColor3"
+#define SFColorLine @"lineColor"
+#define SFColorBorder @"borderColor"
+
+#define SFColorMajor @"majorColor"
+#define SFColorMinor @"minorColor"
+
+#define SFColorTitle1 @"titleColor1"
+#define SFColorTitle2 @"titleColor2"
+#define SFColorContent1 @"contentColor1"
+#define SFColorContent2 @"contentColor2"
+#define SFColorContent3 @"contentColor3"
 
 /**
  *  推荐使用这些方法来获取颜色，以便更换主题
@@ -40,21 +46,27 @@
  */
 + (UIColor *)colorForName:(NSString *)name;
 
-+ (UIColor *)colorForNaviBarTint;
-+ (UIColor *)colorForNaviBarBarTint;
++ (UIColor *)colorForNaviBar;
 + (UIColor *)colorForNaviBarTitle;
 + (UIColor *)colorForNaviBarItemTitle;
 
-+ (UIColor *)colorForTabBarTint;
-+ (UIColor *)colorForTabBarBarTint;
++ (UIColor *)colorForTabBar;
 + (UIColor *)colorForTabBarItemTitleNormal;
 + (UIColor *)colorForTabBarItemTitleSelected;
 
 + (UIColor *)colorForViewContent;
 + (UIColor *)colorForViewBackgroud;
 
-+ (UIColor *)colorForText1;
-+ (UIColor *)colorForText2;
-+ (UIColor *)colorForText3;
++ (UIColor *)colorForLine;
++ (UIColor *)colorForBorder;
+
++ (UIColor *)colorForMajor;
++ (UIColor *)colorForMinor;
+
++ (UIColor *)colorForTitle1;
++ (UIColor *)colorForTitle2;
++ (UIColor *)colorForContent1;
++ (UIColor *)colorForContent2;
++ (UIColor *)colorForContent3;
 
 @end

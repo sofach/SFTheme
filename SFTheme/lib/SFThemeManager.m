@@ -48,29 +48,14 @@
     if (_fontOffset != fontOffset) {
         _fontOffset = fontOffset;
         [[NSUserDefaults standardUserDefaults] setFloat:_fontOffset forKey:SFUserDefaultThemeFontOffset];
+        [[NSUserDefaults standardUserDefaults] synchronize];
     }
 }
 
-- (void)useTheme:(SFTheme *)theme {
+- (void)applyTheme:(SFTheme *)theme {
     _theme = theme;
     self.fontOffset = 0.0;
     [[NSNotificationCenter defaultCenter] postNotificationName:SFNotificationThemeChanged object:theme];
-}
-
-- (UIImage *)imageForName:(NSString *)name {
-    return [self.theme imageForName:name];
-}
-
-- (UIColor *)colorForName:(NSString *)name {
-    return [self.theme colorForName:name];
-}
-
-- (UIFont *)fontForName:(NSString *)name {
-    return [self.theme fontForName:name];
-}
-
-- (UIFont *)fontForName:(NSString *)name fontFamily:(NSString *)fontFamily {
-    return [self.theme fontForName:name fontFamily:fontFamily];
 }
 
 @end

@@ -21,8 +21,9 @@
 		AD249A921B8AC1DF003AD9BE /* SFThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AD249A911B8AC1DF003AD9BE /* SFThemeManager.m */; };
 		AD249A951B8AC4D5003AD9BE /* UIColor+SFTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = AD249A941B8AC4D5003AD9BE /* UIColor+SFTheme.m */; };
 		AD249A981B8AC526003AD9BE /* UIFont+SFTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = AD249A971B8AC526003AD9BE /* UIFont+SFTheme.m */; };
-		AD249A9B1B8AC82F003AD9BE /* UIImage+SFTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = AD249A9A1B8AC82F003AD9BE /* UIImage+SFTheme.m */; };
 		AD249A9D1B8AE2FD003AD9BE /* SFTheme.podspec in Resources */ = {isa = PBXBuildFile; fileRef = AD249A9C1B8AE2FD003AD9BE /* SFTheme.podspec */; };
+		AD8997391E4C0DE500F9A640 /* Images2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD8997381E4C0DE500F9A640 /* Images2.xcassets */; };
+		AD89973F1E4C920200F9A640 /* NSNumber+SFTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = AD89973E1E4C920200F9A640 /* NSNumber+SFTheme.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,9 +62,10 @@
 		AD249A941B8AC4D5003AD9BE /* UIColor+SFTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+SFTheme.m"; sourceTree = "<group>"; };
 		AD249A961B8AC526003AD9BE /* UIFont+SFTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+SFTheme.h"; sourceTree = "<group>"; };
 		AD249A971B8AC526003AD9BE /* UIFont+SFTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+SFTheme.m"; sourceTree = "<group>"; };
-		AD249A991B8AC82F003AD9BE /* UIImage+SFTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SFTheme.h"; sourceTree = "<group>"; };
-		AD249A9A1B8AC82F003AD9BE /* UIImage+SFTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SFTheme.m"; sourceTree = "<group>"; };
 		AD249A9C1B8AE2FD003AD9BE /* SFTheme.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SFTheme.podspec; sourceTree = "<group>"; };
+		AD8997381E4C0DE500F9A640 /* Images2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images2.xcassets; sourceTree = "<group>"; };
+		AD89973D1E4C920200F9A640 /* NSNumber+SFTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+SFTheme.h"; sourceTree = "<group>"; };
+		AD89973E1E4C920200F9A640 /* NSNumber+SFTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+SFTheme.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				AD249A581B8ABD4F003AD9BE /* ViewController.m */,
 				AD249A5A1B8ABD4F003AD9BE /* Main.storyboard */,
 				AD249A5D1B8ABD4F003AD9BE /* Images.xcassets */,
+				AD8997381E4C0DE500F9A640 /* Images2.xcassets */,
 				AD249A5F1B8ABD4F003AD9BE /* LaunchScreen.xib */,
 				AD249A501B8ABD4F003AD9BE /* Supporting Files */,
 			);
@@ -160,8 +163,8 @@
 				AD249A941B8AC4D5003AD9BE /* UIColor+SFTheme.m */,
 				AD249A961B8AC526003AD9BE /* UIFont+SFTheme.h */,
 				AD249A971B8AC526003AD9BE /* UIFont+SFTheme.m */,
-				AD249A991B8AC82F003AD9BE /* UIImage+SFTheme.h */,
-				AD249A9A1B8AC82F003AD9BE /* UIImage+SFTheme.m */,
+				AD89973D1E4C920200F9A640 /* NSNumber+SFTheme.h */,
+				AD89973E1E4C920200F9A640 /* NSNumber+SFTheme.m */,
 			);
 			path = lib;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 			files = (
 				AD249A5C1B8ABD4F003AD9BE /* Main.storyboard in Resources */,
 				AD249A8C1B8ABE94003AD9BE /* ThemeDefault2.bundle in Resources */,
+				AD8997391E4C0DE500F9A640 /* Images2.xcassets in Resources */,
 				AD249A611B8ABD4F003AD9BE /* LaunchScreen.xib in Resources */,
 				AD249A9D1B8AE2FD003AD9BE /* SFTheme.podspec in Resources */,
 				AD249A5E1B8ABD4F003AD9BE /* Images.xcassets in Resources */,
@@ -273,10 +277,10 @@
 				AD249A981B8AC526003AD9BE /* UIFont+SFTheme.m in Sources */,
 				AD249A561B8ABD4F003AD9BE /* AppDelegate.m in Sources */,
 				AD249A831B8ABE85003AD9BE /* SFStyle.m in Sources */,
+				AD89973F1E4C920200F9A640 /* NSNumber+SFTheme.m in Sources */,
 				AD249A951B8AC4D5003AD9BE /* UIColor+SFTheme.m in Sources */,
 				AD249A8F1B8ABFE7003AD9BE /* SFTheme.m in Sources */,
 				AD249A531B8ABD4F003AD9BE /* main.m in Sources */,
-				AD249A9B1B8AC82F003AD9BE /* UIImage+SFTheme.m in Sources */,
 				AD249A921B8AC1DF003AD9BE /* SFThemeManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

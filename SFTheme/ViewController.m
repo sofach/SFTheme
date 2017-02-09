@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "SFTheme.h"
+#import "SFThemeManager.h"
 
 
 @interface ViewController ()
@@ -41,17 +41,22 @@
 
 - (void)setTheme
 {
-    _imgView.image = [UIImage imageForName:@"default_user"];
-    _label.font = [UIFont fontForText1WithFontFamily:SFFontFamilyPingFangSCMedium];
-    _label.textColor = [UIColor colorForText1];
+    _label.font = [UIFont fontForTitle1WithFontFamily:SFFontFamilyPingFangSCMedium];
+    _label.textColor = [UIColor colorForBorder];
 }
 
 - (IBAction)theme1Clicked:(id)sender {
     
-    [[SFThemeManager sharedInstence] useTheme:[SFTheme themeWithBundleName:@"ThemeDefault"]];
+    _imgView.image = [UIImage imageNamed:@"default_user"];
+    [[SFThemeManager sharedInstence] applyTheme:[SFTheme themeWithBundleName:@"ThemeDefault"]];
 }
 
 - (IBAction)theme2Clicked:(id)sender {
-    [[SFThemeManager sharedInstence] useTheme:[SFTheme themeWithBundleName:@"ThemeDefault2"]];
+    _imgView.image = [UIImage imageNamed:@"theme2_default_user"];
+    [[SFThemeManager sharedInstence] applyTheme:[SFTheme themeWithBundleName:@"ThemeDefault2"]];
+    
+    //[[SFThemeManager sharedInstence].theme addStylesWithBundleName:@"ThemeDefault2"];
+    //[self setTheme];
+
 }
 @end
