@@ -33,6 +33,7 @@
     self = [super init];
     if (self) {
         _fontOffset = CGFLOAT_MAX;
+        _theme = [SFTheme new];
     }
     return self;
 }
@@ -52,7 +53,7 @@
     }
 }
 
-- (void)applyTheme:(SFTheme *)theme {
+- (void)switchToTheme:(SFTheme *)theme {
     _theme = theme;
     self.fontOffset = 0.0;
     [[NSNotificationCenter defaultCenter] postNotificationName:SFNotificationThemeChanged object:theme];

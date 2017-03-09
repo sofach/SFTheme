@@ -10,6 +10,7 @@
 
 #define SFNumberLineHeight @"lineHeight"
 #define SFNumberBorderWidth @"borderWidth"
+#define SFNumberCornerRadius @"cornerRadius"
 #define SFNumberMarginX @"marginX"
 #define SFNumberMarginY @"marginY"
 #define SFNumberPaddingX @"paddingX"
@@ -28,6 +29,7 @@
 
 + (CGFloat)floatForLineHeight;
 + (CGFloat)floatForBorderWidth;
++ (CGFloat)floatForCornerRadius;
 + (CGFloat)floatForMarginX;
 + (CGFloat)floatForMarginY;
 + (CGFloat)floatForPaddingX;

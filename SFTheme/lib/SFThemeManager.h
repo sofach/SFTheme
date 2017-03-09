@@ -27,11 +27,7 @@
 
 /**
  *  切换主题，当调用时，会发送SFNotificationThemeChanged的通知，接收这些通知来处理主题切换
- *
- *  @param themeName 主题名，bundle（去除后缀），或者沙盒中的根文件夹名
- *  @param themeType 主题类型，bundle：直接添加到项目中的主题，比如默认主题
- sandbox：下载到沙盒中的主题
  */
-- (void)applyTheme:(SFTheme *)theme;
+- (void)switchToTheme:(SFTheme *)theme;
 
 @end

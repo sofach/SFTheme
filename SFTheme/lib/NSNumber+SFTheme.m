@@ -22,6 +22,9 @@
 + (CGFloat)floatForBorderWidth {
     return [self numberForName:SFNumberBorderWidth].floatValue;
 }
++ (CGFloat)floatForCornerRadius {
+    return [self numberForName:SFNumberCornerRadius].floatValue;
+}
 + (CGFloat)floatForMarginX {
     return [self numberForName:SFNumberMarginX].floatValue;
 }

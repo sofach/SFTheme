@@ -19,7 +19,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    [[SFThemeManager sharedInstence] applyTheme:[SFTheme themeWithBundleName:@"ThemeDefault"]];
+    [[SFThemeManager sharedInstence].theme addStylesWithBundleName:@"ThemeDefault"];
 
     return YES;
 }

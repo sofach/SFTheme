@@ -48,12 +48,13 @@
 - (IBAction)theme1Clicked:(id)sender {
     
     _imgView.image = [UIImage imageNamed:@"default_user"];
-    [[SFThemeManager sharedInstence] applyTheme:[SFTheme themeWithBundleName:@"ThemeDefault"]];
+    
+    [[SFThemeManager sharedInstence] switchToTheme:[SFTheme themeWithBundleName:@"ThemeDefault"]];
 }
 
 - (IBAction)theme2Clicked:(id)sender {
     _imgView.image = [UIImage imageNamed:@"theme2_default_user"];
-    [[SFThemeManager sharedInstence] applyTheme:[SFTheme themeWithBundleName:@"ThemeDefault2"]];
+    [[SFThemeManager sharedInstence] switchToTheme:[SFTheme themeWithBundleName:@"ThemeDefault2"]];
     
     //[[SFThemeManager sharedInstence].theme addStylesWithBundleName:@"ThemeDefault2"];
     //[self setTheme];
