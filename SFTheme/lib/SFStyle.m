@@ -11,6 +11,8 @@
 
 @interface SFStyle ()
 
+@property (strong, nonatomic) UIColor *color;
+
 @end
 
 @implementation SFStyle
@@ -60,15 +62,16 @@
         NSLog(@"[warm] not color");
         return nil;
     }
-    
-    NSArray *rgb = [[self.value stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] componentsSeparatedByString:@","];
-    if (rgb.count != 4) {
-        NSLog(@"[error] color style format should be [r,g,b,alpha]");
-        return nil;
+    if (!_color) {
+        NSArray *rgb = [[self.value stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] componentsSeparatedByString:@","];
+        if (rgb.count != 4) {
+            NSLog(@"[error] color style format should be [r,g,b,alpha]");
+            return nil;
+        }
+        _color = [UIColor colorWithRed:[rgb[0] floatValue]/255 green:[rgb[1] floatValue]/255 blue:[rgb[2] floatValue]/255 alpha:[rgb[3] floatValue]];
     }
-    UIColor *color = [UIColor colorWithRed:[rgb[0] floatValue]/255 green:[rgb[1] floatValue]/255 blue:[rgb[2] floatValue]/255 alpha:[rgb[3] floatValue]];
     
-    return color;
+    return _color;
 }
 
 - (NSNumber *)numberValue {
