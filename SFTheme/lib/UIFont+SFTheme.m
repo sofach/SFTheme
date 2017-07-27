@@ -30,7 +30,7 @@
 }
 
 + (UIFont *)fontForName:(NSString *)name {
-    return [[[SFThemeManager sharedInstence].theme styleForName:name] fontValue];
+    return [self fontForName:name fontFamily:SFFontFamilyPingFangSC];
 }
 
 + (UIFont *)fontForName:(NSString *)name fontFamily:(SFFontFamily)fontFamily {

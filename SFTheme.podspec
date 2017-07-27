@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "SFTheme"
-  s.version      = "1.0.7"
+  s.version      = "1.0.8"
   s.summary      = "更改应用主题"
 
   s.description  = <<-DESC
