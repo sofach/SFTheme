@@ -12,7 +12,8 @@
 typedef enum {
     SFFontFamilyPingFangSC = 0,
     SFFontFamilyPingFangSCLight,
-    SFFontFamilyPingFangSCMedium
+    SFFontFamilyPingFangSCMedium,
+    SFFontFamilyPingFangSCSemibold
 }SFFontFamily;
 
 //以下几个必须得在theme.plist中定义
@@ -35,6 +36,7 @@ typedef enum {
 + (UIFont *)fontForName:(NSString *)name;
 + (UIFont *)fontForName:(NSString *)name fontFamily:(SFFontFamily)fontFamily;
 + (UIFont *)fontForName:(NSString *)name fontFamilyName:(NSString *)fontFamilyName;
++ (UIFont *)fontOfSize:(CGFloat)size;
 + (UIFont *)fontOfSize:(CGFloat)size fontFamily:(SFFontFamily)fontFamily;
 + (UIFont *)fontOfSize:(CGFloat)size fontFamilyName:(NSString *)fontFamilyName;
 

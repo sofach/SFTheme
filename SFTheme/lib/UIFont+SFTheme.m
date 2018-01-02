@@ -23,6 +23,8 @@
         case SFFontFamilyPingFangSCMedium:
             fontFamilyString = @"PingFangSC-Medium";
             break;
+        case SFFontFamilyPingFangSCSemibold:
+            fontFamilyString = @"PingFangSC-Semibold";
         default:
             break;
     }
@@ -40,6 +42,10 @@
 
 + (UIFont *)fontForName:(NSString *)name fontFamilyName:(NSString *)fontFamilyName {
     return [[[SFThemeManager sharedInstence].theme styleForName:name] fontValueWithFontFamily:fontFamilyName];
+}
+
++ (UIFont *)fontOfSize:(CGFloat)size {
+    return [self fontOfSize:size fontFamily:SFFontFamilyPingFangSC];
 }
 
 + (UIFont *)fontOfSize:(CGFloat)size fontFamily:(SFFontFamily)fontFamily {

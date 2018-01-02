@@ -218,9 +218,11 @@
 				TargetAttributes = {
 					AD249A4C1B8ABD4F003AD9BE = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = EWE36XWL9D;
 					};
 					AD249A651B8ABD4F003AD9BE = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = EWE36XWL9D;
 						TestTargetID = AD249A4C1B8ABD4F003AD9BE;
 					};
 				};
@@ -412,6 +414,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = EWE36XWL9D;
 				INFOPLIST_FILE = SFTheme/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sofach.$(PRODUCT_NAME:rfc1034identifier)";
@@ -423,6 +426,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = EWE36XWL9D;
 				INFOPLIST_FILE = SFTheme/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sofach.$(PRODUCT_NAME:rfc1034identifier)";
@@ -434,6 +438,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = EWE36XWL9D;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -454,6 +459,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = EWE36XWL9D;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
